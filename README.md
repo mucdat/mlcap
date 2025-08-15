@@ -1,3 +1,2 @@
 # mlcap
-Imperial College Machine Learning Professional Certificate Capstone Project
-To be populated as the project matures
+Imperial College Machine Learning Professional Certificate Capstone Project.  Current plan for the project is a classifier to distinguish weeds from turf grass to enable analysis and targeted treatment of turf grass.
