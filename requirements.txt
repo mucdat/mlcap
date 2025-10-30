@@ -4,4 +4,5 @@ ipykernel
 IPython
 pandas
 matplotlib
-scipy     
+scipy   
+pandas  
