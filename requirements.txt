@@ -1,11 +1,12 @@
-numpy
-scikit-learn
+jupyter
 ipykernel
 IPython
+numpy
+matplotlib
 pandas
-matplotlib
+scikit-learn
+tensorflow
+torch
 scipy   
-pandas  
-matplotlib
 plotly
 nbformat
