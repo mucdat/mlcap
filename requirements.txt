@@ -6,3 +6,6 @@ pandas
 matplotlib
 scipy   
 pandas  
+matplotlib
+plotly
+nbformat
