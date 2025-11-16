@@ -3,7 +3,7 @@
 This repository chronicles my work on the "Black Box Optimisation Challenge" which is part of the machine learning course I am taking at Imperial College.  
 
 ## Background
-We are provided a few data points from eight functions.  These range from 2 inputs --> 1 output to 8 inputs and one output.  Our task is to maximise the output of the function through a series of measurements, which we are allowed to make once a week for about 13 weeks.   Real-world scenarios that look like this project include problem where getting additional data is expensive and time-consuming, and where improving output has significant economic impact:
+We are provided a few data points from eight functions.  These range from 2 inputs --> 1 output to 8 inputs and one output.  Our task is to maximise the output of the function through a series of measurements, which we are allowed to make once a week for about 13 weeks.   Real-world scenarios that look like this project include problems where getting additional data is expensive and time-consuming, and where improving output has significant economic impact:
 
      - Hyperparameter tuning for Neural Network training (number of hidden layers, nonlinearities, number of hidden neutrons) 
 
