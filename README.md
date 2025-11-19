@@ -51,7 +51,7 @@ Week 4:  Technical approach TBD
 
 As the weeks have gone by, I've converged on the following technical approach:
 
-(1) Mostly use standard **Bayesian Optimization** as described in https://bayesoptbook.com/book/bayesoptbook.pdf and many other sources
+(1) Mostly use standard **Bayesian Optimization** as described in https://bayesoptbook.com/book/bayesoptbook.pdf and many other sources.  Bayesian optimisation was designed to balance exploration and exploitation in settings where new queries to the underlying function are expensive and rare.
 
 (2) Apply **input and output transformations** when the problem calls for it, for example due to wildly varying outputs, or input features that cause wild swings in output.  This is similar to the approach taken by Huawei in https://valohaichirpprod.blob.core.windows.net/papers/huawei.pdf.  These are implemented by implementing the abstract class Transformation for the functions that use transformations.
 
