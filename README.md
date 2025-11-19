@@ -49,8 +49,19 @@ Week 3:  After being only partially satisfied with the surrogate functions, I be
 
 Week 4:  Technical approach TBD
 
+As the weeks have gone by, I've converged on the following technical approach:
+
+(1) Mostly use standard **Bayesian Optimization** as described in https://bayesoptbook.com/book/bayesoptbook.pdf and many other sources
+
+(2) Apply **input and output transformations** when the problem calls for it, for example due to wildly varying outputs, or input features that cause wild swings in output.  This is similar to the approach taken by Huawei in https://valohaichirpprod.blob.core.windows.net/papers/huawei.pdf.  These are implemented by implementing the abstract class Transformation for the functions that use transformations.
+
+(3) In some cases, **segment the search space into a region of interest** or "Trust Region" so that the Bayesian optimization surrogate function fitting problem is not overly influenced by far-away low-lying points. This approach is described, for example, in this paper from JetBrains https://valohaichirpprod.blob.core.windows.net/papers/jetbrains.pdf.  Currently this is a work-in-progress in the repo.
+
+(4) In early weeks, or whenever a region of interest appears exhausted I forced a highly exploratory search by selecting a point as far away as possible from existing points, a "Farthest Point Sampling" approach.
+
+
 ## Required libaries
-See `requirements.txt`.  Pretty standard machine learning stuff including `numpy`, `matplotlib`, `pandas`, `scikit-learn`.  `plotly`is used for interactive visualization of lower dimensional functions.  `tensorflow`and `torch`were used for experimentation and likely to be removed.
+See `requirements.txt`.  Pretty standard machine learning stuff including `numpy`, `matplotlib`, `pandas`, `scikit-learn`.  `plotly`is used for interactive visualization of lower dimensional functions.  This is an excellent library because it allows you to spin figures around in order to inspect how the surrogate and the original data points overlap.  `tensorflow`and `torch`were used for experimentation and likely to be removed.
 
 ## repo structure
 Likely to change over the next few weeks because the repository is in real need of re-factoring:
