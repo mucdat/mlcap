@@ -4,6 +4,7 @@ IPython
 numpy
 matplotlib
 pandas
+seaborn
 scikit-learn
 tensorflow
 torch
