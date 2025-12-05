@@ -1,6 +1,7 @@
 jupyter
 ipykernel
 IPython
+pyzmq
 numpy
 matplotlib
 pandas
