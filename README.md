@@ -11,6 +11,10 @@ We are provided a few data points from eight functions.  These range from 2 inpu
 
     - Exploration, for example for oil or minerals
 
+## Data sheets and Model Cards
+[Data sheet](./cards/Datasheet.md)
+[Model Card](./cards/Model%20Card.md)
+
 ## Function Inputs and outputs
 
 Functions are as follows:
